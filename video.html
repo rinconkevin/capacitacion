@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                     
+    <link rel="stylesheet" href="css/magnific-popup.css">                                
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/video.css"/>
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                  results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        window.onload = function() {
+            var id = getParameterByName('id');
+            const video = document.getElementById('idDisplay');
+            const titulo = document.getElementById('titulo');
+            if(id == "i1"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Cambiar formato de WORD a PDF"
+            }else if(id == "i2"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Cambiar formato de PDF a WORD"
+            }else if(id == "i3"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Cambiar formato de EXCEL a PDF"
+            }else if(id == "i4"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Cambiar formato de PDF a EXCEL"
+            }else if(id == "i5"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Cambiar formato de POWER POINT a PDF"
+            }else if(id == "i6"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Cambiar formato de PDF a POWER POINT"
+            }else if(id == "i7"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Tutorial básico de WORD"
+            }else if(id == "i8"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Tutorial básico de EXCEL"
+            }else if(id == "i9"){
+                video.src = "videos/Video.mkv"
+                titulo.textContent = "Tutorial básico de POWER POINT"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="fondo">
+        <br>
+        <div class="logo">
+            <img src="img/neaty-01.jpg" alt="">
+            <h1 id="titulo">Titulo</h1>
+        </div>
+        
+        <br><br>
+        <center><video controls id="idDisplay"></video></center>
+        <br>
+        <br>
+        <center><a href="index.html" class="tm-button tm-button-wide">Volver</a></a></center>
+        <br>
+    </div>
+</body>
+</html>
