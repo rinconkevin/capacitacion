@@ -22,34 +22,34 @@
 
         window.onload = function() {
             var id = getParameterByName('id');
-            const video = document.getElementById('idDisplay');
             const titulo = document.getElementById('titulo');
+            const video = document.getElementById('videooo');
             if(id == "i1"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/Nln0Q6ghgvM";
                 titulo.textContent = "Cambiar formato de WORD a PDF"
             }else if(id == "i2"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/8qR6Ej1Bh6U";
                 titulo.textContent = "Cambiar formato de PDF a WORD"
             }else if(id == "i3"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/8hydR5IF4w8";
                 titulo.textContent = "Cambiar formato de EXCEL a PDF"
             }else if(id == "i4"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/XYz9lKFOPKQ";
                 titulo.textContent = "Cambiar formato de PDF a EXCEL"
             }else if(id == "i5"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/VipLe-pV8UA";
                 titulo.textContent = "Cambiar formato de POWER POINT a PDF"
             }else if(id == "i6"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/NQPA4FDRcCs";
                 titulo.textContent = "Cambiar formato de PDF a POWER POINT"
             }else if(id == "i7"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/7N2SjoqRHn8?list=PLxgQzwsFLGL3fefAGhMGMAcQi84wDL4x3";
                 titulo.textContent = "Tutorial básico de WORD"
             }else if(id == "i8"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/yKWFMgurUnU?list=PLLniqWgyb4HHfkyWNgMWSvTq6RlUGusgN";
                 titulo.textContent = "Tutorial básico de EXCEL"
             }else if(id == "i9"){
-                video.src = "videos/Video.mkv"
+                video.src = "https://www.youtube.com/embed/pDfZOFtdF-A?list=PLLniqWgyb4HH8-CK0uz4ZoSSb1Dl_Wa1l";
                 titulo.textContent = "Tutorial básico de POWER POINT"
             }
         }
@@ -64,7 +64,9 @@
         </div>
         
         <br><br>
-        <center><video controls id="idDisplay"></video></center>
+        <center>
+            <iframe width="1050" height="500" id="videooo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
         <br>
         <br>
         <center><a href="index.html" class="tm-button tm-button-wide">Volver</a></a></center>
